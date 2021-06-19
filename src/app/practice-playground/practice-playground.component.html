@@ -1,0 +1,4 @@
+<h3> Here we practice Angular concepts</h3>
+<div *ngFor="let item of allPracticeItems$ | async">
+    <a [routerLink]="item?.routePath">{{item?.name}}</a>
+</div>

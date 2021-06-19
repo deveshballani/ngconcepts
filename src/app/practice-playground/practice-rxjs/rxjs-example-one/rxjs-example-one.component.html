@@ -1,0 +1,44 @@
+<section class="about">
+    <h2>Example 1</h2>
+    <div>
+        <h3>Basic Covered</h3>
+        <p> Checkout the console for details </p> 
+    
+        <ul>
+            <li>Created custom observable using <code>new Observable()</code></li>
+            <li> 
+                RxJS Operators - 
+                <ul>
+                    <li><code>map()</code></li>
+                    <li><code>shareReply()</code></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>***This is part of example***</h2>
+    <div>
+        <h4> All Users </h4>
+        <ul>
+            <li *ngFor="let user of users$ | async">
+                {{user.email}}
+            </li>
+        </ul>
+
+        <h4> Users with even Id</h4>
+        <ul>
+            <li *ngFor="let user of evenIdUsers$ | async">
+                {{user.email}}
+            </li>
+        </ul>
+
+        <h4> Users with even Id</h4>
+        <ul>
+            <li *ngFor="let user of oddIdUsers$ | async">
+                {{user.email}}
+            </li>
+        </ul>
+    </div>
+</section>
